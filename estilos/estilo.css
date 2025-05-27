@@ -1,0 +1,14 @@
+:root {
+    --primario: #261715;
+    --secundario: #594242;
+    --impacto: #2C8F38;
+    
+    --margen-lateral: ;
+    
+}
+
+@media computador {
+    :root {
+        --margen-lateral: ;
+    }
+}

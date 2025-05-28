@@ -53,7 +53,6 @@ a:hover{
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
 }
 
 .login-input{
@@ -110,11 +109,10 @@ a:hover{
 .submit{
     background-color: #4BAA2B;
     font-size: 0.9em !important;
-    margin: 0 0 32px;
     cursor: pointer;
     font-weight: 600;
     border: none;
-    transition: 0,6s;
+    transition: 1s;
 }
 
 .submit:hover{
@@ -123,7 +121,7 @@ a:hover{
 }
 
 .separador{
-    margin: auto;
+    margin: 32px auto 0;
     width: 15em;
     height: 0.6px;
     background: var(--letra-clara);
@@ -140,10 +138,36 @@ a:hover{
 
 .singup-input{
     background-color: #855959;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .singup-input:hover{
     background-color: var(--letra-clara);
     color: #6d3f3f;
+}
+
+/*Sign up styles*/
+
+.body-signup{
+    background-position: right;
+}
+
+.signup-container{
+    width: 100%;
+    align-self: flex-end;
+}
+
+.nombre{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+@media screen and (min-width: 450px){
+    .signup-container{
+        align-self: center;
+    }
+    .signup-container{
+        width: 400px;
+    }
 }

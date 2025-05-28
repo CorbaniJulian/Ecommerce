@@ -5,15 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="estilos/estilo.css">
+    <link rel="stylesheet" href="estilos/estilosGral.css">
+    <link rel="stylesheet" href="estilos/nav.css">
+    <link rel="stylesheet" href="estilos/index.css">
 </head>
 <body>
     <nav></nav>
+    <div class="slider" aria-label="Galería de imágenes">
+    <button class="btn-slide btn-prev" aria-label="Imagen anterior">&#10094;</button>
+    <div class="slides">
+    <div class="slide" style="background-image: url('https://picsum.photos/id/1015/1200/600');" role="img" aria-label="Paisaje con montañas y lago"></div>
+    <div class="slide" style="background-image: url('https://picsum.photos/id/1016/1200/600');" role="img" aria-label="Bosque con niebla"></div>
+    <div class="slide" style="background-image: url('https://picsum.photos/id/1025/1200/600');" role="img" aria-label="Perro en la naturaleza"></div>
+    <div class="slide" style="background-image: url('https://picsum.photos/id/1035/1200/600');" role="img" aria-label="Vista aérea de campo"></div>
+  </div>
+  <button class="btn-slide btn-next" aria-label="Imagen siguiente">&#10095;</button>
+    </div>
     
     <main></main>
     
     <footer></footer>
     <script src="./modulos/navegacion.js"></script>
     <script src="./modulos/pie-pagina.js"></script>
+    <script src="modulos/index.js"></script>
 </body>
 </html>

@@ -44,10 +44,21 @@
   .btn-next {
     right: 0.8rem;
   }
+  .slider-title {
+    position: absolute;
+    bottom: 10px; /* Ajusta la distancia desde la parte inferior */
+    left: 10px; /* Ajusta la distancia desde la izquierda */
+    color: white; /* Color del texto */
+    font-size: 1.5rem; /* Tamaño de la fuente */
+    background: rgba(48, 25, 4, 0.5); /* Fondo semi-transparente */
+    padding: 5px 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    z-index: 20; /* Asegúrate de que esté por encima de las imágenes */
+}
   @media (min-width: 768px) {
     .slider {
-      height: 90vh; /* aumentada de 60vh a 90vh */
-      max-height: 750px; /* aumentada de 500px a 750px */
+      height: 75vh;
+      max-height: 625px; 
       border-radius: 12px;
     }
     .btn-slide {

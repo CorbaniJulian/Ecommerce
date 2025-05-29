@@ -210,7 +210,7 @@ align-self: end;
     flex: 1;
     text-align: center;
     aspect-ratio: 1.63;
-    box-shadow: #aaa4 0 0 20px;
+    box-shadow: #aaa2 0 0 20px;
     max-width: 200px;
 }
 
@@ -242,11 +242,45 @@ align-self: end;
 }
 
 @media (min-width: 700px) {
+    header {
+        padding: 24px 60px;
+    }
+
+    .carrito-productos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0;
+        align-content: start;
+    }
+
     .comprar {
         align-items: end;
     }
 
     .btn-comprar {
+        margin-inline: 32px;
         width: 200px;
+    }
+
+    .barra-herramientas {
+        padding: 0 60px;
+        gap: 12px;
+    }
+
+    .producto {
+        padding: 12px 60px;
+        width:50%;
+        box-sizing: border-box;
+        height: 108px;
+        align-items: start;
+        margin-bottom: 12px;
+    }
+
+    .lista-favoritos {
+        padding: 0 60px;
+    }
+
+    .favoritos h2 {
+        padding: 12px 60px;
     }
 }

@@ -10,7 +10,7 @@ nav {
   top: 0;
   z-index: 1000;
   flex-wrap: wrap;
-  height: 60px; /* default for mobile */
+  height: 60px; 
 }
 
 .buscador {
@@ -35,9 +35,17 @@ nav {
   color: white;
   width: 100%;
 }
-
+.toggle-menu {
+  display: none;
+}
+.menu-label {
+  cursor: pointer;
+  font-size: 1.3em;
+  margin-left: 1em;
+  color: white;
+}
 .nav-menu {
-  display: none; /* oculto en mobile */
+  display: none; 
   list-style: none;
   align-items: center;
   gap: 1em;
@@ -61,17 +69,28 @@ nav {
 .submenu {
   display: none;
   position: absolute;
-  top: 100%;
-  right: 0;
+  top: 60px; /* altura del nav */
+  left: 0;
+  width: 100%;
   background-color: var(--secundario);
-  padding: 0.5em;
-  border-radius: 5px;
-  flex-direction: column;
+  padding: 0.5em 0;
+  list-style: none;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  z-index: 999;
 }
-
-.menu-hamburguesa:hover .submenu {
+.toggle-menu:checked + .menu-label + .submenu {
   display: flex;
 }
+.submenu a{
+    color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  display: block;
+  font-weight: bold;
+}
+
 
 .carrito {
   margin-left: 1em;
@@ -92,17 +111,18 @@ nav {
   .nav-menu {
     display: flex;
     gap: 3em;
-    margin-right: auto; /* empuja el carrito a la derecha */
+    margin-right: auto; 
   }
   .menu-hamburguesa {
-    display: none; /* ocultar hamburguesa */
+    display: none; 
   }
   .carrito {
     margin-left: auto;
     order: 3;
   }
-  .submenu {
-    display: none ;
+  .menu-label,
+  .nav-menu-movil {
+    display: none;
   }
   .nav-menu a {
   display: inline-block; 
@@ -119,8 +139,8 @@ nav {
 }
 
 .carrito:hover {
-  transform: scale(1.2);
-  color: var(--secundario);
+  transform: scale(1.1);
+  color: var(--impacto);
 }
 
 

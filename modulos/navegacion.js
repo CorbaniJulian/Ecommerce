@@ -9,14 +9,15 @@ function cargarNavegacion() {
     <div class="carrito">
       <i class="fa-solid fa-cart-shopping"></i>
     </div>
-
-    <div class="menu-hamburguesa">
-      <i class="fa-solid fa-bars"></i>
+    <input type="checkbox" id="toggle-menu" class="toggle-menu">
+    <label for="toggle-menu" class="menu-label">
+    <i class="fa-solid fa-bars"></i>
+    </label>
       <ul class="submenu">
         <li><a href="#">Inicio</a></li>
         <li><a href="#">Productos</a></li>
         <li><a href="#">Ofertas</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Sign in</a></li>
       </ul>
     </div>
 
@@ -24,7 +25,7 @@ function cargarNavegacion() {
       <li><a href="#">Inicio</a></li>
       <li><a href="#">Productos</a></li>
       <li><a href="#">Ofertas</a></li>
-      <li><a href="#">Contacto</a></li>
+      <li><a href="#">Iniciar Sesion</a></li>
     </ul>
     `;
 }

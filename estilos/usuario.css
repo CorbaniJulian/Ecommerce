@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+    background-image: url("../imagenes/fondo-login.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+a{
+    color: var(--letra-clara);
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.login-container{
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(3px);
+    width: 308px;
+    padding: 32px 24px;
+    border-radius: 10px;
+    color: var(--letra-clara);
+    font-family: "Inter";
+}
+
+.login-titulo h1{
+    text-align: center;
+    font-size: 2em;
+}
+
+.login-contenedor-datos{
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+    margin-top: 32px;
+
+}
+
+.login-dato{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-input{
+    width: 100%;
+    height: 42px;
+    border-radius: 100px;
+    border: 1px solid var(--impacto);
+    background-color: transparent;
+    font-size: 0.7em; 
+    color: var(--letra-clara);
+    padding-inline: 24px;
+    outline: none;
+}
+
+.login-label{
+    position: absolute;
+    transition: 0.2s;
+    font-size: 12px;
+    top: 13px;
+    left: 24px;
+}
+
+.login-input:focus ~ .login-label, .login-input:valid ~ .login-label{
+    position: absolute;
+    font-size: 12px;
+    top: -10px;
+    left: 14px;
+    color: var(--letra-clara);
+    background-color: var(--impacto);
+    padding: 0px 10px;
+    border-radius: 30px;
+}
+
+.login-dato i{
+    position: absolute;
+    right: 24px;
+    top: 12px;
+    font-size: 18px;
+}
+
+.remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -8px;
+    font-size: 10px;
+}
+
+.remember-me{
+    display: flex;
+    gap: 5px;
+    align-self: center;
+}
+
+.submit{
+    background-color: #4BAA2B;
+    font-size: 0.9em !important;
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+    transition: 1s;
+}
+
+.submit:hover{
+    background-color: var(--letra-clara);
+    color: #35811c;
+}
+
+.separador{
+    margin: 32px auto 0;
+    width: 15em;
+    height: 0.6px;
+    background: var(--letra-clara);
+}
+
+.singup{
+    text-align: center;
+    margin-top: 18px;
+}
+
+.singup p{
+    font-size: 10px;
+}
+
+.singup-input{
+    background-color: #855959;
+    margin-top: 10px;
+}
+
+.singup-input:hover{
+    background-color: var(--letra-clara);
+    color: #6d3f3f;
+}
+
+/*Sign up styles*/
+
+.body-signup{
+    background-position: right;
+}
+
+.signup-container{
+    width: 100%;
+    align-self: flex-end;
+}
+
+.nombre{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+@media screen and (min-width: 450px){
+    .signup-container{
+        align-self: center;
+    }
+    .signup-container{
+        width: 400px;
+    }
+}

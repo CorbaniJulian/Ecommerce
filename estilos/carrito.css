@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+    margin-top: 48px;
+    background-color: var(--primario);
+    color: white;
+    display: flex;
+    font-size: 0.8em;
+    font-family: 'Inter';
+    gap: 12px;
+    align-items: center;
+    padding: 24px;
+}
+
+header i {
+    font-size: 24px;
+}
+
+.barra-herramientas {
+    height: 36px;
+    background-color: var(--secundario);
+    width: 100%;
+    display: flex;
+    padding: 0 12px;
+    align-items: center;
+    gap: 6px;
+
+}
+
+input {
+display: block;}
+
+.iconos .icon {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.carrito {
+    background-color: white;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.carrito-productos {
+    padding: 12px 0;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 240px);
+    color: white;
+    gap: 12px;
+    background-color: #eee;
+}
+
+.carrito h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.producto {
+    background: var(--secundario);
+    padding: 12px;
+    color: #000;
+    display: flex;
+    gap: 6px;
+
+}
+
+img {
+    height: 72px;
+    background-color: white;
+}
+
+.detalle-producto {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+    color: white;
+    width:100%;
+    justify-content: space-between;
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    flex: 1;
+}
+
+.producto input[type="checkbox"] {
+    align-self: start;
+    border-radius: 6px;
+}
+
+.detalle-producto img {
+  width: 84px;
+  height: 84px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inter';
+    flex: 1;
+}
+
+.precio {
+  font-weight: bold;
+}
+
+.nombre {
+    font-weight: light;
+}
+
+.acciones {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+align-self: end;
+}
+
+.cantidad {
+  background: var(--impacto);
+  color: white;
+  padding: 5px 8px;
+  border-radius: 0 0 6px 6px;
+  font-weight: bold;
+    position: relative;
+    top: -12px;
+    display: block;
+    height: 36px;
+}
+
+.comprar {
+    background: var(--primario);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px 24px;
+}
+
+.btn {
+  background: var(--primario);
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+    color: white;
+}
+
+.btn.pagar {
+    background-color: var(--impacto);
+}
+
+.btn-comprar {
+  width: 100%;
+  background: var(--impacto);
+  color: white;
+  padding: 12px;
+  border: none;
+  font-weight: bold;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.barrita {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--impacto);
+}
+
+/* FAVORITOS */
+
+.favoritos {
+    background: var(--primario);
+    padding-bottom: 24px;
+}
+
+.favoritos h2 {
+    padding: 12px 24px;
+}
+
+.lista-favoritos {
+    display: flex;
+    gap: 24px;
+    padding: 0 24px;
+}
+
+.favorito {
+    background: white;
+    color: black;
+    border-radius: 6px;
+    flex: 1;
+    text-align: center;
+    aspect-ratio: 1.63;
+    box-shadow: #aaa2 0 0 20px;
+    max-width: 200px;
+}
+
+.img-placeholder {
+    background: #ccc;
+    width: 100%;
+    aspect-ratio: 1;
+    border-bottom: #aaa;
+    border-radius: 6px 6px 0 0;
+}
+
+.descripcion {
+    display: flex;
+    flex-direction: column;
+    height: 75%;
+    font-family: 'Inter';
+    text-align: left;
+    padding: 12px;
+}
+
+.descripcion p {
+    font-weight: bold;
+}
+
+.descripcion small {
+    font-size: 12px;
+    font-weight: light;
+    line-height: 0.8em;
+}
+
+@media (min-width: 700px) {
+    header {
+        padding: 24px 60px;
+    }
+
+    .carrito-productos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0;
+        align-content: start;
+    }
+
+    .comprar {
+        align-items: end;
+    }
+
+    .btn-comprar {
+        margin-inline: 32px;
+        width: 200px;
+    }
+
+    .barra-herramientas {
+        padding: 0 60px;
+        gap: 12px;
+    }
+
+    .producto {
+        padding: 12px 60px;
+        width:50%;
+        box-sizing: border-box;
+        height: 108px;
+        align-items: start;
+        margin-bottom: 12px;
+    }
+
+    .lista-favoritos {
+        padding: 0 60px;
+    }
+
+    .favoritos h2 {
+        padding: 12px 60px;
+    }
+}

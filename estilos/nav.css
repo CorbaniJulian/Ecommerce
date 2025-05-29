@@ -93,7 +93,7 @@ nav {
 }
 
 
-.carrito {
+nav .carrito {
   margin-left: 1em;
   font-size: 1.3em;
 }
@@ -117,7 +117,7 @@ nav {
   .menu-hamburguesa {
     display: none; 
   }
-  .carrito {
+nav .carrito {
     margin-left: auto;
     order: 3;
   }
@@ -134,12 +134,12 @@ nav {
   transform: scale(1.1);
   color: var(--secundario);
 }
-.carrito {
+nav .carrito {
   transition: transform 0.2s ease;
   cursor: pointer;
 }
 
-.carrito:hover {
+nav .carrito:hover {
   transform: scale(1.1);
   color: var(--impacto);
 }

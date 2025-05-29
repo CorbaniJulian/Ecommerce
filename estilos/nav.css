@@ -97,6 +97,10 @@ nav .carrito {
   margin-left: 1em;
   font-size: 1.3em;
 }
+.carrito a{
+  color: white;
+  text-decoration: none;
+}
 
 /* =================== PC =================== */
 @media screen and (min-width: 768px) {

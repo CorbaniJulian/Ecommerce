@@ -18,7 +18,7 @@ function cargarPie() {
                         <li><a href="#">Inicio</a></li>
                         <li><a href="#">Productos</a></li>
                         <li><a href="#">Ofertas</a></li>
-                        <li><a href="#">Iniciar Sesion</a></li>
+                        <li><a href="login.html">Iniciar Sesion</a></li>
                       </ul>
                     </div>
         </div>

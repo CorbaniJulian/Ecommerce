@@ -23,6 +23,7 @@ function cargarPie() {
                     </div>
         </div>
 `;
+
 }
 
 document.addEventListener("DOMContentLoaded", cargarPie);

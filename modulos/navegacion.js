@@ -27,7 +27,7 @@ function cargarNavegacion() {
       <li><a href="#">Ofertas</a></li>
       <li><a href="#">Iniciar Sesion</a></li>
     </ul>
-    `;
+`;
 }
 
 document.addEventListener("DOMContentLoaded", cargarNavegacion);

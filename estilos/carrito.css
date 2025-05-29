@@ -12,7 +12,7 @@ body::-webkit-scrollbar {
 }
 
 header {
-    margin-top: 60px;
+    margin-top: 48px;
     background-color: var(--primario);
     color: white;
     display: flex;
@@ -57,7 +57,7 @@ display: block;}
     padding: 12px 0;
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 252px);
+    height: calc(100vh - 240px);
     color: white;
     gap: 12px;
     background-color: #eee;
@@ -87,7 +87,7 @@ img {
   align-items: center;
   gap: 12px;
     color: white;
-    width:100%;::
+    width:100%;
     justify-content: space-between;
 }
 
@@ -211,6 +211,7 @@ align-self: end;
     text-align: center;
     aspect-ratio: 1.63;
     box-shadow: #aaa4 0 0 20px;
+    max-width: 200px;
 }
 
 .img-placeholder {
@@ -240,4 +241,12 @@ align-self: end;
     line-height: 0.8em;
 }
 
+@media (min-width: 700px) {
+    .comprar {
+        align-items: end;
+    }
 
+    .btn-comprar {
+        width: 200px;
+    }
+}

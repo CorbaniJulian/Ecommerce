@@ -6,8 +6,12 @@
     <title>Registrarse</title>
     <link rel="stylesheet" href="estilos/estiloGral.css">
     <link rel="stylesheet" href="estilos/usuario.css">
+    <link rel="stylesheet" href="estilos/nav.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body class="body-signup">
+    <nav></nav>
     <div class="container">
         <div class="login-container signup-container">
             
@@ -15,7 +19,7 @@
                 <h1>Registrarse</h1>
             </div>
 
-            <form class="login-contenedor-datos">
+            <form class="login-contenedor-datos" action="login.html">
                 <div class="nombre">
                     <div class="login-dato">
                         <input type="text" name="nombre" class="login-input" required>
@@ -29,13 +33,13 @@
                     </div>
                 </div>
                 <div class="login-dato">
-                    <input type="password" name="contraseña" class="login-input" required>
-                    <label for="contraseña" class="login-label">Email</label>
+                    <input type="email" name="email" class="login-input" required>
+                    <label for="email" class="login-label">Email</label>
                     <i class="fa-solid fa-lock"></i>
                 </div>
                 <div class="login-dato">
-                    <input type="password" name="contraseña" class="login-input" required>
-                    <label for="contraseña" class="login-label">Telefono</label>
+                    <input type="number" name="number" class="login-input" required>
+                    <label for="number" class="login-label">Telefono</label>
                     <i class="fa-solid fa-lock"></i>
                 </div>
                 <div class="login-dato">
@@ -73,4 +77,5 @@
         </div>
     </div>
 </body>
+<script src="modulos/navegacion.js"></script>
 </html>

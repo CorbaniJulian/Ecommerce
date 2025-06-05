@@ -33,7 +33,7 @@
                     <h3>Zapato Clásico</h3>
                     <p class="precio">$12.000</p>
                     <p class="descripcion">Diseño elegante ideal para eventos formales.</p>
-                    <div id="botonProducto">
+                    <div id="botonProducto" onclick="abrirFormulario()" >
                         <i class="fa-solid fa-pencil"></i>
                         <h3>Editar</h3>
                     </div>
@@ -47,7 +47,7 @@
                     <h3>Zapato de Rengo</h3>
                     <p class="precio">$178.000</p>
                     <p class="descripcion">Diseño informal ideal para eventos solitarios.</p>
-                    <div id="botonProducto">
+                    <div id="botonProducto" onclick="abrirFormulario()">
                         <i class="fa-solid fa-pencil"></i>
                         <h3>Editar</h3>
                     </div>
@@ -61,7 +61,7 @@
                     <h3>Zapato Tonto</h3>
                     <p class="precio">$11.000</p>
                     <p class="descripcion">Diseño Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                    <div id="botonProducto">
+                    <div id="botonProducto" onclick="abrirFormulario()">
                         <i class="fa-solid fa-pencil"></i>
                         <h3>Editar</h3>
                     </div>
@@ -75,7 +75,7 @@
                     <h3>Zapato Inteligente</h3>
                     <p class="precio">$1.000</p>
                     <p class="descripcion">Diseño Lorem ipsum dolor sit amet,ludantium..</p>
-                    <div id="botonProducto">
+                    <div id="botonProducto" onclick="abrirFormulario()">
                         <i class="fa-solid fa-pencil"></i>
                         <h3>Editar</h3>
                     </div>
@@ -94,7 +94,7 @@
                     <h3>Zapatillas Addidas</h3>
                     <p class="precio">$120.000</p>
                     <p class="descripcion">Zapatillas Addidas color negro ultimo modelo</p>
-                    <div id="botonProducto">
+                    <div id="botonProducto" onclick="abrirFormulario()">
                         <i class="fa-solid fa-pencil"></i>
                         <h3>Editar</h3>
                     </div>
@@ -108,7 +108,7 @@
                     <h3>Zapatillas Nike Bordo</h3>
                     <p class="precio">$178.000</p>
                     <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <div id="botonProducto">
+                    <div id="botonProducto" onclick="abrirFormulario()">
                         <i class="fa-solid fa-pencil"></i>
                         <h3>Editar</h3>
                     </div>
@@ -122,7 +122,7 @@
                     <h3>Zapatillas Air Jordan Retro 1994</h3>
                     <p class="precio">$200.000</p>
                     <p class="descripcion">Diseño Lorem ipsum dolor sit amet, consectetur.</p>
-                    <div id="botonProducto">
+                    <div id="botonProducto" onclick="abrirFormulario()">
                         <i class="fa-solid fa-pencil"></i>
                         <h3>Editar</h3>
                     </div>
@@ -136,7 +136,7 @@
                     <h3>Zapatillas Topper </h3>
                     <p class="precio">$39.000</p>
                     <p class="descripcion">Diseño Lorem ipsum dolor sit amet,ludantium..</p>
-                    <div id="botonProducto">
+                    <div id="botonProducto" onclick="abrirFormulario()">
                         <i class="fa-solid fa-pencil"></i>
                         <h3>Editar</h3>
                     </div>
@@ -147,12 +147,28 @@
                 </div>
             </div>
         </section>
-        <div id="agregar-productos">
+        <div id="agregar-productos"onclick="abrirFormularioAgregar()">
             <i class="fa-solid fa-plus"></i>
             <h2>Agregar</h2>
             <h2>Productos</h2>
         </div>
     </main>
+    <div id="fondo-oscuro" class="oculto"></div>
+
+    <div id="formulario-edicion" class="modal oculto">
+        <button class="cerrar-formulario" onclick="cerrarFormulario()">✖</button>
+        <h2 id="titulo-formulario">Editar producto</h2>
+        <form>
+            <div id="campo-seccion" class="oculto">
+            <input type="text" placeholder="Sección del producto">
+            </div>
+            <input type="text" placeholder="Nombre del producto">
+            <input type="number" placeholder="Precio">
+            <textarea placeholder="Descripción"></textarea>
+            <input type="text" placeholder="URL de imagen">
+            <button type="submit">Guardar</button>
+        </form>
+    </div>
     
     <footer></footer>
     <script src="modulos/navegacion.js"></script>

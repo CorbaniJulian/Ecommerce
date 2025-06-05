@@ -34,3 +34,27 @@ const slides = document.querySelector('.slides');
     clearInterval(slideInterval);
     slideInterval = setInterval(showNextSlide, 4000);
   }
+
+  function abrirFormulario() {
+    document.getElementById('fondo-oscuro').classList.remove('oculto');
+    document.getElementById('formulario-edicion').classList.remove('oculto');
+    document.body.classList.add('body-bloqueado');
+
+    document.getElementById('titulo-formulario').textContent = 'Editar producto';
+    document.getElementById('campo-seccion').classList.add('oculto');
+  }
+  function abrirFormularioAgregar() {
+    document.getElementById('fondo-oscuro').classList.remove('oculto');
+    document.getElementById('formulario-edicion').classList.remove('oculto');
+    document.body.classList.add('body-bloqueado');
+
+    document.getElementById('titulo-formulario').textContent = 'Agregar producto';
+    document.getElementById('campo-seccion').classList.remove('oculto');
+}
+
+  function cerrarFormulario() {
+    document.getElementById('fondo-oscuro').classList.add('oculto');
+    document.getElementById('formulario-edicion').classList.add('oculto');
+    document.body.classList.remove('body-bloqueado');
+  }
+

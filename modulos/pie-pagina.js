@@ -15,7 +15,7 @@ function cargarPie() {
             <p>copyright &copy; <a href="#">Tienda de zapatos</a>  </p>
                     <div class="footer-menu">
                       <ul class="f-menu">
-                        <li><a href="#">Inicio</a></li>
+                        <li><a href="index.html">Inicio</a></li>
                         <li><a href="#">Productos</a></li>
                         <li><a href="#">Ofertas</a></li>
                         <li><a href="login.html">Iniciar Sesion</a></li>

@@ -14,7 +14,7 @@ function cargarNavegacion() {
     <i class="fa-solid fa-bars"></i>
     </label>
       <ul class="submenu">
-        <li><a href="#">Inicio</a></li>
+        <li><a href="index.html">Inicio</a></li>
         <li><a href="#">Productos</a></li>
         <li><a href="#">Ofertas</a></li>
         <li><a href="login.html">Sign in</a></li>
@@ -22,7 +22,7 @@ function cargarNavegacion() {
     </div>
 
     <ul class="nav-menu">
-      <li><a href="#">Inicio</a></li>
+      <li><a href="index.html">Inicio</a></li>
       <li><a href="#">Productos</a></li>
       <li><a href="#">Ofertas</a></li>
       <li><a href="login.html">Iniciar Sesion</a></li>

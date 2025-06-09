@@ -7,7 +7,7 @@ function cargarNavegacion() {
     </div>
 
     <div class="carrito">
-      <a href="carrito.html"<i class="fa-solid fa-cart-shopping"></i></a>
+      <a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
     </div>
     <input type="checkbox" id="toggle-menu" class="toggle-menu">
     <label for="toggle-menu" class="menu-label">

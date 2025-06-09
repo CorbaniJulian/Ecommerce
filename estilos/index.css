@@ -62,13 +62,18 @@
 }
 
 .producto {
-   background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
   padding: 1em;
   border-radius: 8px;
   text-align: center;
   border: solid 2px;
   border-color: rgb(122, 122, 122);
   box-shadow: 0px 6px 3px 0px gray  ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .producto img {
@@ -103,6 +108,29 @@
   font-size: 0.9em;
   color: #000000;
 }
+#botonComprar{
+    width: 75%;
+    height: 2.5em;
+    background-color: var(--impacto);
+    border-radius: 24px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+#botonComprar h3{
+    color: white;
+    margin-top: 0;
+    margin: 0;
+}
+#botonComprar :hover{
+    background-color: rgb(27, 44, 27);
+    transform: scale(1.05);
+}
+
   @media (min-width: 768px) {
     .slider {
       height: 75vh;
@@ -135,5 +163,8 @@
   }
   .slider-title{
     font-size: 3em;
+  }
+  #botonComprar{
+    width: 100%;
   }
   }

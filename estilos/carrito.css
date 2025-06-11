@@ -12,15 +12,25 @@ body::-webkit-scrollbar {
 }
 
 header {
-    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
     background-color: var(--primario);
+    padding: 12px;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 0;
+    padding-top: 12px;
+}
+
+.header-content {
     color: white;
     display: flex;
     font-size: 0.8em;
     font-family: 'Inter';
     gap: 12px;
     align-items: center;
-    padding: 24px;
+    padding: 0 24px;
 }
 
 header i {
@@ -28,18 +38,33 @@ header i {
 }
 
 .barra-herramientas {
-    height: 36px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    align-self: end;
     background-color: var(--secundario);
     width: 100%;
-    display: flex;
-    padding: 0 12px;
-    align-items: center;
-    gap: 6px;
+    justify-content: end;
+}
 
+.barra-herramientas button {
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    height: 36px;
+    width: 36px;
+    align-self: end;
+}
+
+.barra-herramientas i {
+    font-size: 18px;
 }
 
 input {
-display: block;}
+    display: block;
+}
 
 .iconos .icon {
     font-size: 20px;
@@ -54,13 +79,13 @@ display: block;}
 }
 
 .carrito-productos {
-    padding: 12px 0;
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 240px);
+    height: calc(100vh - 226px);
     color: white;
     gap: 12px;
-    background-color: #eee;
+    background-color: #fff;
+    justify-content: center;
 }
 
 .carrito h2 {
@@ -68,13 +93,19 @@ display: block;}
     margin-bottom: 12px;
 }
 
+.lista-productos {
+    display: flex;
+    flex-direction: column;
+}
+
 .producto {
     background: var(--secundario);
-    padding: 12px;
     color: #000;
     display: flex;
     gap: 6px;
-
+    align-items: center !important;
+    margin-bottom: 12px;
+    padding: 6px 12px;
 }
 
 img {
@@ -83,9 +114,9 @@ img {
 }
 
 .detalle-producto {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
     color: white;
     width:100%;
     justify-content: space-between;
@@ -101,7 +132,6 @@ img {
 
 .producto input[type="checkbox"] {
     align-self: start;
-    border-radius: 6px;
 }
 
 .detalle-producto img {
@@ -116,6 +146,7 @@ img {
     justify-content: space-between;
     font-family: 'Inter';
     flex: 1;
+    padding-bottom: 6px;
 }
 
 .precio {
@@ -130,19 +161,35 @@ img {
   display: flex;
   align-items: center;
   gap: 5px;
-align-self: end;
+align-self: end;                                                                                           
+
 }
 
-.cantidad {
-  background: var(--impacto);
+
+.acciones div {
+    display:flex;
+}
+
+.acciones input {
+  background: var(--primario);
   color: white;
-  padding: 5px 8px;
-  border-radius: 0 0 6px 6px;
   font-weight: bold;
-    position: relative;
-    top: -12px;
     display: block;
     height: 36px;
+width: 60px;
+    border: none;
+    border-raius: none;
+    padding: 0 6px;
+    font-size: 18px;
+    font-family: 'Inter';
+}
+
+.agregar {
+    border-radius: 6px 0 0 6px !important;
+}
+
+.quitar {
+    border-radius: 0 6px 6px 0 !important;
 }
 
 .comprar {
@@ -151,6 +198,11 @@ align-self: end;
     flex-direction: column;
     gap: 12px;
     padding: 12px 24px;
+    align-items: end;
+}
+
+.comprar div {
+    display: flex;
 }
 
 .btn {
@@ -186,10 +238,20 @@ align-self: end;
     background-color: var(--impacto);
 }
 
+.seleccion {
+    display: flex;
+    gap: 12px;
+}
+
+.facturacion {
+    display: none;
+}
+
 /* FAVORITOS */
 
-.favoritos {
+.favoritos {    
     background: var(--primario);
+ 2 carrito.html  2 e/carrito.css                                                                                           X
     padding-bottom: 24px;
 }
 
@@ -243,14 +305,24 @@ align-self: end;
 
 @media (min-width: 700px) {
     header {
-        padding: 24px 60px;
+        padding: 12px 60px;
+        flex-direction: row;
+        margin-top: 80px;
+        gap: 0;
     }
 
     .carrito-productos {
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 0;
+        gap: 12px;
         align-content: start;
+        padding-bottom: 12px;
+        padding-top: 12px;
+        height: calc(100vh - 216px);
+    }
+
+    .header-content {
+        padding: 0;
     }
 
     .comprar {
@@ -260,20 +332,66 @@ align-self: end;
     .btn-comprar {
         margin-inline: 32px;
         width: 200px;
+        height: 43px;
+        background-color: transparent;
     }
 
     .barra-herramientas {
-        padding: 0 60px;
-        gap: 12px;
+        background-color: var(--secundario);
+        border-radius: 6px;
+        width: 36px;
+    }
+
+    .lista-productos {
+        width: 50vw;
     }
 
     .producto {
         padding: 12px 60px;
-        width:50%;
         box-sizing: border-box;
         height: 108px;
         align-items: start;
+        border-radius: 6px;
+    }
+
+    .facturacion {
+        background-color: var(--secundario);
+        width: 22vw;
+        border-radius: 6px;
+        padding: 12px 24px;
+        font-size: 18px;
+        font-family: 'Inter';
+        line-height: 1.5em;
+        height: fit-content;
+        display: flow-root;
+    }
+
+    .facturacion .factura-titulo {
         margin-bottom: 12px;
+        font-weight: 600;
+    }
+
+    .campo {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 200;
+    }
+
+    .facturacion button {
+        width: 100%;
+        padding: 12px 24px;
+        font-size: 18px;
+        font-family: "Inter";
+        border-radius: 6px;
+        border: 0;
+        background-color: var(--impacto);
+        font-weight: 600;
+        color: white;
+    }
+
+    .campo.total {
+        font-weight: 600 !important;
+        margin: 12px 0;
     }
 
     .lista-favoritos {
@@ -282,5 +400,10 @@ align-self: end;
 
     .favoritos h2 {
         padding: 12px 60px;
+    }
+
+    .btn-comprar {
+        background-color: transparent;
+        color: transparent;
     }
 }

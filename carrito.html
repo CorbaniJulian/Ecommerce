@@ -9,94 +9,126 @@
     <link rel="stylesheet" href="estilos/carrito.css"/> 
     <link rel="stylesheet" href="estilos/nav.css"/>
     
-    <script src="modulos/navegacion.js"></script>
+    <rst;script src="modulos/navegacion.js"></script>
 <script src="https://kit.fontawesome.com/0b1ed72234.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav></nav>
 
     <header>
-        <i class="fa-solid fa-cart-shopping"></i>
-        <h1>Carrito de Compras</h1>
+        <div class="header-content">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <h1>Carrito de Compras</h1>
+        </div>
+        <div class="barra-herramientas">
+            <button>
+                <i class="fa-solid fa-trash"></i>
+            </button>
+        </div>
     </header>
 
     <main> 
         <section class="carrito">
             
-            <div class="barra-herramientas">
-                <input type="checkbox">
-                <p>Seleccionar todos</p>
-            </div>
 
             <div class="carrito-productos">
-            
-                <div class="producto">
-                    <input type="checkbox" />
-                    <div class="detalle-producto">
-                        <img src="https://via.placeholder.com/60x60.png?text=Shoe" alt="Producto" />
-                        <div class="columna">
-                            <div class="info">
-                                <div class="sub-info">
-                                    <p class="precio">$ 55.000,00</p>
-                                    <p class="nombre">Zapatillas Adidas</p>
+                <div class="lista-productos">
+                    <div class="producto">
+                        <input type="checkbox"/>
+                        <div class="detalle-producto">
+                            <img src="https://via.placeholder.com/60x60.png?text=Shoe" alt="Producto" />
+                            <div class="columna">
+                                <div class="info">
+                                    <div class="sub-info">
+                                        <p class="precio">$ 55.000,00</p>
+                                        <p class="nombre">Zapatillas Adidas</p>
+                                    </div>
                                 </div>
-                                <span class="cantidad">3</span>
-                            </div>
-                            <div class="acciones">
-                                    <button class="btn eliminar"><i class="fa-solid fa-trash"></i></button>
-                                <button class="btn editar"><i class="fa-solid fa-pencil"></i></button>
-                                <button class="btn pagar"><i class="fa-solid fa-money-bill"></i></button>
+                                <div class="acciones">
+                                        <div>
+                                            <button class="btn agregar"><i class="fa-solid fa-minus"></i></button>
+                                            <input type="number" value="3" min="1">
+                                            <button class="btn quitar"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                        <button class="btn eliminar"><i class="fa-solid fa-trash"></i></button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="producto">
-                    <input type="checkbox" />
-                    <div class="detalle-producto">
-                        <img src="https://via.placeholder.com/60x60.png?text=Shoe" alt="Producto" />
-                        <div class="columna">
-                            <div class="info">
-                                <div class="sub-info">
-                                    <p class="precio">$ 55.000,00</p>
-                                    <p class="nombre">Zapatillas Adidas</p>
+
+
+                                           <div class="producto">
+                        <input type="checkbox"/>
+                        <div class="detalle-producto">
+                            <img src="https://via.placeholder.com/60x60.png?text=Shoe" alt="Producto" />
+                            <div class="columna">
+                                <div class="info">
+                                    <div class="sub-info">
+                                        <p class="precio">$ 55.000,00</p>
+                                        <p class="nombre">Zapatillas Adidas</p>
+                                    </div>
                                 </div>
-                                <span class="cantidad">3</span>
+                                <div class="acciones">
+                                        <div>
+                                            <button class="btn agregar"><i class="fa-solid fa-minus"></i></button>
+                                            <input type="number" value="3" min="1">
+                                            <button class="btn quitar"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                        <button class="btn eliminar"><i class="fa-solid fa-trash"></i></button>
+                                </div>
                             </div>
-                            <div class="acciones">
-                                    <button class="btn eliminar"><i class="fa-solid fa-trash"></i></button>
-                                <button class="btn editar"><i class="fa-solid fa-pencil"></i></button>
-                                <button class="btn pagar"><i class="fa-solid fa-money-bill"></i></button>
+                        </div>
+                    </div>
+ 
+                                           <div class="producto">
+                        <input type="checkbox"/>
+                        <div class="detalle-producto">
+                            <img src="https://via.placeholder.com/60x60.png?text=Shoe" alt="Producto" />
+                            <div class="columna">
+                                <div class="info">
+                                    <div class="sub-info">
+                                        <p class="precio">$ 55.000,00</p>
+                                        <p class="nombre">Zapatillas Adidas</p>
+                                    </div>
+                                </div>
+                                <div class="acciones">
+                                        <div>
+                                            <button class="btn agregar"><i class="fa-solid fa-minus"></i></button>
+                                            <input type="number" value="3" min="1">
+                                            <button class="btn quitar"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                        <button class="btn eliminar"><i class="fa-solid fa-trash"></i></button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                    <div class="producto">
-                    <input type="checkbox" />
-                    <div class="detalle-producto">
-                        <img src="https://via.placeholder.com/60x60.png?text=Shoe" alt="Producto" />
-                        <div class="columna">
-                            <div class="info">
-                                <div class="sub-info">
-                                    <p class="precio">$ 55.000,00</p>
-                                    <p class="nombre">Zapatillas Adidas</p>
-                                </div>
-                                <span class="cantidad">3</span>
-                            </div>
-                            <div class="acciones">
-                                    <button class="btn eliminar"><i class="fa-solid fa-trash"></i></button>
-                                <button class="btn editar"><i class="fa-solid fa-pencil"></i></button>
-                                <button class="btn pagar"><i class="fa-solid fa-money-bill"></i></button>
-                            </div>
+                <div class="facturacion">
+                    <p class="factura-titulo">Resumen de compra</p>
+                    <div>
+                        <div class="campo">
+                            <p>Productos</p>
+                            <p>$60.000</p>
+                        </div>
+                        <div class="campo">
+                            <p>Envio</p>
+                            <p>$5.000</p>
                         </div>
                     </div>
+                    <div class="campo total">
+                        <p>Total</p>
+                        <p>$65.000</p>
+                    </div>
+                    <button>Comprar</button>
+
                 </div>
+                
             
             </div>
 
             <div class="comprar">
-                <button class="btn-comprar">Comprar</button>
+                    <button class="btn-comprar">$65.000</button>
                 <span class="barrita"></span>
             </div>
         
@@ -129,4 +161,3 @@
     </main>
 </body>
 </html>
-
